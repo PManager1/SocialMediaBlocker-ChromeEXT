@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "SocialMedia Blocker",
+  "version": "0.1.1",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Content.js"]
+    }
+  ],
+  "icons": { "48": "icon48.png", "128": "icon128.png" },
+  "browser_action": {
+    "default_popup": "Popup.html",
+    "default_title": "SocialMedia Blocker"
+  },
+  "permissions": [
+    "https://www.youtube.com/*",
+    "https://www.facebook.com/*",
+    "https://www.netflix.com/*",
+    "https://www.youjizz.com/*",
+    "https://www.youporn.com/*",
+    "https://www.google.com/search?q=hola*"
+  ]
+}
